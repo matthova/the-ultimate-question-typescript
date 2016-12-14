@@ -5,9 +5,9 @@
   "name": "the-ultimate-question-ts",
   "version": "1.0.0",
   "scripts": {
-    "test": "node node_modules/mocha/bin/_mocha dist/test/test.js",
+    "test": "npm run build && node node_modules/mocha/bin/_mocha dist/test/test.js",
     "debug-test": "node --nolazy --debug-brk=5858 node_modules/mocha/bin/_mocha --no-timeouts dist/test/test.js",
-    "start": "node node_modules/gulp/bin/gulp.js"
+    "build": "node node_modules/gulp/bin/gulp.js"
   },
   "devDependencies": {
     "@types/assert": "0.0.31",
